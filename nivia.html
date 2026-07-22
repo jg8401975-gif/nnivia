@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Garota de Ipanema</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #blackScreen {
+      display: none;
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #startButton {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+      cursor: pointer;
+    }
+    a {
+      font-size: 24px;
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="startPage">
+    <a href="#" onclick="openBlackScreen()">Entrar</a>
+  </div>
+
+  <div id="blackScreen">
+    <button id="startButton" onclick="goToMusic()">nivia</button>
+  </div>
+
+  <script>
+    function openBlackScreen() {
+      document.getElementById('startPage').style.display = 'none';
+      document.getElementById('blackScreen').style.display = 'flex';
+    }
+
+    function goToMusic() {
+      window.location.href = "https://www.youtube.com/watch?v=WuenyQ4NCQE&t=69s";
+    }
+  </script>
+
+</body>
+</html>
